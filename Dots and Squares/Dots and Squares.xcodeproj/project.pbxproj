@@ -14,6 +14,7 @@
 		03074BC721BAE68B0096DCFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03074BC521BAE68B0096DCFA /* LaunchScreen.storyboard */; };
 		03074BD221BAE68B0096DCFA /* Dots_and_SquaresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03074BD121BAE68B0096DCFA /* Dots_and_SquaresTests.swift */; };
 		03074BDD21BAE68B0096DCFA /* Dots_and_SquaresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03074BDC21BAE68B0096DCFA /* Dots_and_SquaresUITests.swift */; };
+		B0FB1E4D21BAED3D0016E19F /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB1E4C21BAED3D0016E19F /* Dot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		03074BD821BAE68B0096DCFA /* Dots and SquaresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dots and SquaresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03074BDC21BAE68B0096DCFA /* Dots_and_SquaresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dots_and_SquaresUITests.swift; sourceTree = "<group>"; };
 		03074BDE21BAE68B0096DCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FB1E4C21BAED3D0016E19F /* Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		03074BBB21BAE6890096DCFA /* Dots and Squares */ = {
 			isa = PBXGroup;
 			children = (
+				B0FB1E4C21BAED3D0016E19F /* Dot.swift */,
 				03074BBC21BAE6890096DCFA /* AppDelegate.swift */,
 				03074BBE21BAE6890096DCFA /* ViewController.swift */,
 				03074BC021BAE6890096DCFA /* Main.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				03074BBF21BAE6890096DCFA /* ViewController.swift in Sources */,
 				03074BBD21BAE6890096DCFA /* AppDelegate.swift in Sources */,
+				B0FB1E4D21BAED3D0016E19F /* Dot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
