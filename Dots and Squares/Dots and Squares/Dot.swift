@@ -12,7 +12,7 @@ class Dot
 {
     var xpos = 0
     var ypos = 0
-    var teamColorNumber = 0
+    var teamNumber = 0
     
     func setxpos(setTo: Int)
     {
@@ -22,20 +22,22 @@ class Dot
     {
         ypos = setTo
     }
-    func setColorTeamOne(setTo: Int)
+    func setTeamOne(setTo: Int)
     {
-        teamColorNumber = 1
+        teamNumber = 1
     }
-    func setColorTeamTwo(setTo: Int)
+    func setTeamTwo(setTo: Int)
     {
-        teamColorNumber = 2
+        teamNumber = 2
     }
-    func setColorNoTeam(setTo: Int)
+    func setNoTeam(setTo: Int)
     {
-        teamColorNumber = 0
+        teamNumber = 0
     }
     func getColor() -> Int
     {
-        return teamColorNumber
+        return teamNumber
     }
+    
+    
 }
