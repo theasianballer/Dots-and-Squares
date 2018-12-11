@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="XiL-98-J5N">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Qo8-AQ-GKy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4b9-kE-bBt">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lk-ej-R8x">
+                                <rect key="frame" x="50" y="126" width="1266" height="30"/>
+                                <state key="normal" title="Player 1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkf-Iw-AlA">
+                                <rect key="frame" x="587" y="157" width="30" height="30"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" red="1" green="0.034920876077064067" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8j-Tm-Lcb">
+                                <rect key="frame" x="694" y="157" width="31" height="30"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleColor" red="0.025917158352513292" green="0.15706479762421166" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-lZ-pPc">
+                                <rect key="frame" x="487" y="157" width="42" height="30"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" red="0.027328347509853357" green="1" blue="0.0014138489788152464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cp-Wj-38k">
+                                <rect key="frame" x="50" y="80" width="1266" height="24"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MX-Nb-ubr">
+                                <rect key="frame" x="50" y="209" width="1266" height="30"/>
+                                <state key="normal" title="Payer 2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5S-20-Xv5">
+                                <rect key="frame" x="694" y="253" width="31" height="30"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleColor" red="0.015756598348714235" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WR-pU-M1x">
+                                <rect key="frame" x="587" y="253" width="30" height="30"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUL-Lb-SO0">
+                                <rect key="frame" x="489" y="253" width="42" height="30"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" red="0.02732834751" green="1" blue="0.0014138489790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U5S-20-Xv5" firstAttribute="leading" secondItem="8WR-pU-M1x" secondAttribute="trailing" constant="50" id="6Hn-5N-lGO"/>
+                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="U5S-20-Xv5" secondAttribute="trailing" constant="50" id="6Uq-mZ-bd9"/>
+                            <constraint firstItem="3MX-Nb-ubr" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="8l0-B8-2hw"/>
+                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="7cp-Wj-38k" secondAttribute="trailing" constant="50" id="9Ia-86-7NA"/>
+                            <constraint firstItem="Tkf-Iw-AlA" firstAttribute="leading" secondItem="DKt-lZ-pPc" secondAttribute="trailing" constant="50" id="EHb-Sl-xbl"/>
+                            <constraint firstItem="iUL-Lb-SO0" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="Pys-9m-baX"/>
+                            <constraint firstItem="i8j-Tm-Lcb" firstAttribute="leading" secondItem="Tkf-Iw-AlA" secondAttribute="trailing" constant="50" id="Qas-Eb-nqE"/>
+                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="8lk-ej-R8x" secondAttribute="trailing" constant="50" id="RHL-Wq-sWf"/>
+                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="3MX-Nb-ubr" secondAttribute="trailing" constant="50" id="UVV-vk-NLC"/>
+                            <constraint firstItem="DKt-lZ-pPc" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="ZgE-TB-Pen"/>
+                            <constraint firstItem="7cp-Wj-38k" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="bU2-rw-qnp"/>
+                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="i8j-Tm-Lcb" secondAttribute="trailing" constant="50" id="hYI-VP-xZ4"/>
+                            <constraint firstItem="8WR-pU-M1x" firstAttribute="leading" secondItem="iUL-Lb-SO0" secondAttribute="trailing" constant="50" id="imL-AK-QaB"/>
+                            <constraint firstItem="8lk-ej-R8x" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="pLz-yy-Z4C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CNB-lj-0Ve"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KsK-Vx-gXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="649.63396778916535" y="-514.453125"/>
         </scene>
     </scenes>
 </document>
