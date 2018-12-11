@@ -34,7 +34,22 @@ class ViewController: UIViewController {
             }
         }
         
+        for row in array {
+            for line in row {
+                let button = UIButton(frame: CGRect(x: line.xPos, y: line.yPos, width: line.orientation == .HORIZONTAL ? 50 : 10, height: line.orientation == .VERTICAL ? 50 : 10))
+                button.backgroundColor = UIColor.lightGray
+                button.setTitle("", for: [])
+                button.addTarget(self, action: #selector(linePressed), for: .touchUpInside)
+                
+                self.view.addSubview(button)
+            }
+        }
+        
         print(array)
+    }
+    
+    @IBAction func linePressed(_ sender: UIButton!) {
+        print("pressed a line")
     }
 }
 

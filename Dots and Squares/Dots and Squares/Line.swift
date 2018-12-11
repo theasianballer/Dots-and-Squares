@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 struct Line {
-    var xPos: Float
-    var yPos: Float
+    var xPos: Int
+    var yPos: Int
     var xIndex: Int
     var yIndex: Int
     var color: UIColor
@@ -27,8 +27,8 @@ struct Line {
         color = UIColor.lightGray
         activated = false
         
-        xPos = 0.0
-        yPos = 0.0
+        xPos = (orientation == .HORIZONTAL ? 25 : 0) + 50 * xIndex
+        yPos = 25 * yIndex
     }
     
     mutating func setActive() {
