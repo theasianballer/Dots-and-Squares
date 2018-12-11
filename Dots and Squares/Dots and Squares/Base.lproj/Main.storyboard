@@ -17,25 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EvA-gH-2RX">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="04R-Yb-ZIP">
-                                <rect key="frame" x="100" y="120" width="824" height="548"/>
-                            </stackView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="EvA-gH-2RX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KJC-UR-dzZ"/>
-                            <constraint firstItem="EvA-gH-2RX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RoZ-wI-C9x"/>
-                            <constraint firstItem="04R-Yb-ZIP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="cg9-Uk-QkA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EvA-gH-2RX" secondAttribute="trailing" id="k6t-yh-Pcw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EvA-gH-2RX" secondAttribute="bottom" id="nJn-z5-a4i"/>
-                            <constraint firstItem="04R-Yb-ZIP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="oNI-OP-zx5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="04R-Yb-ZIP" secondAttribute="trailing" constant="100" id="q3R-fP-uaR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="04R-Yb-ZIP" secondAttribute="bottom" constant="100" id="qA4-kL-2HT"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
