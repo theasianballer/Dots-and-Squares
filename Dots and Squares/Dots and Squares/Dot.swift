@@ -22,6 +22,14 @@ class Dot
     {
         ypos = setTo
     }
+    func getYPos() -> Int
+    {
+        return ypos
+    }
+    func getxPos() -> Int
+    {
+        return xpos
+    }
     func setTeamOne(setTo: Int)
     {
         teamNumber = 1
