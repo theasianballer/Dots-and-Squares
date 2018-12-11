@@ -22,6 +22,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func restartGame(_ sender: Any){
+        self.dismiss(animated: false, completion: nil)
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
+    }
 }
 
 
