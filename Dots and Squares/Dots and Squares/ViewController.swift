@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     // Prototype player turn switching
-    
     // Declared enum
     enum currentPlayerTurn {
         case player1
@@ -21,6 +20,7 @@ class ViewController: UIViewController {
     // Declared variable using enum
     var currentPlayer = currentPlayerTurn.player1
     
+    // Declared button properties variable
     @IBOutlet weak var playerSwitchButtonProperties: UIButton!
     
     // Button action for switching player turn state
@@ -36,9 +36,11 @@ class ViewController: UIViewController {
         }
     }
     
+    // Declared button properties variables
     @IBOutlet weak var button1Outlet: UIButton!
     @IBOutlet weak var button2Outlet: UIButton!
     
+    // Action of hititng the first button
     @IBAction func button1(_ sender: UIButton) {
         
         if currentPlayer == currentPlayerTurn.player1 {
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    // Action of hitting the second button
     @IBAction func button2(_ sender: UIButton) {
         if currentPlayer == currentPlayerTurn.player1 {
             button1Outlet.isEnabled = true
@@ -73,13 +75,13 @@ class ViewController: UIViewController {
         }
     }
     
-    // The main thing
-    // secondary thing
+    // Loading method
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    // Warning method
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
