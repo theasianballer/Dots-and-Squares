@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Dot
+struct Dot
 {
     var xpos: Int
     var ypos: Int
@@ -20,13 +20,13 @@ class Dot
         self.teamNumber = 0
     }
     
-    func setxpos(setTo: Int)
+    mutating func setxpos(to xPos: Int)
     {
-        xpos = setTo
+        xpos = xPos
     }
-    func setypos(setTo: Int)
+    mutating func setypos(to yPos: Int)
     {
-        ypos = setTo
+        ypos = yPos
     }
     func getYPos() -> Int
     {
@@ -36,17 +36,9 @@ class Dot
     {
         return xpos
     }
-    func setTeamOne(setTo: Int)
+    mutating func setTeam(to team: Int)
     {
-        teamNumber = 1
-    }
-    func setTeamTwo(setTo: Int)
-    {
-        teamNumber = 2
-    }
-    func setNoTeam(setTo: Int)
-    {
-        teamNumber = 0
+        teamNumber = team
     }
     func getColor() -> Int
     {
