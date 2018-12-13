@@ -29,7 +29,10 @@ class ViewController: UIViewController {
             currentPlayer = currentPlayerTurn.player2
             print("Current player turn is player 2")
             playerSwitchButtonProperties.setTitleColor(UIColor.black, for: UIControlState.normal)
-        } else {
+        }
+            
+        else
+        {
             currentPlayer = currentPlayerTurn.player1
             print("Current player turn is player 1")
             playerSwitchButtonProperties.setTitleColor(UIColor.red, for: UIControlState.normal)
@@ -42,7 +45,6 @@ class ViewController: UIViewController {
     
     // Action of hititng the first button
     @IBAction func button1(_ sender: UIButton) {
-        
         if currentPlayer == currentPlayerTurn.player1 {
             button1Outlet.isEnabled = false
             button2Outlet.isEnabled = true
