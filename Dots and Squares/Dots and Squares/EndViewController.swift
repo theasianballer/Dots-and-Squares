@@ -28,4 +28,9 @@ class EndViewController: UIViewController{
         self.dismiss(animated: false, completion: nil)
         self.presentingViewController?.dismiss(animated: false, completion: nil)
     }
+    
+    @IBAction func resetToOriginalState(sender: UIButton) {
+        // the line should read
+        self.resetToOriginalState (sender: sender)
+    }
 }
