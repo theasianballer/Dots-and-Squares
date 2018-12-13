@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad12_9" orientation="landscape">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,86 +11,150 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="Nvh-he-ZNn">
+            <objects>
+                <viewController id="4sn-BX-5NM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Weh-Jy-qQF">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3j-O1-n4L">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
+                                <items>
+                                    <navigationItem title="Size Selection" id="o8B-cL-hOC">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="rXZ-B6-572">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jIO-gY-Luk">
+                                                <rect key="frame" x="20" y="3" width="78" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="&lt;Back"/>
+                                                <connections>
+                                                    <segue destination="Qo8-AQ-GKy" kind="show" id="tXU-tn-yic"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-RT-XKE">
+                                <rect key="frame" x="0.0" y="70" width="1024" height="1246"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-CS-L7h">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1246"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQv-iY-67G">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="415.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Grid Size 1"/>
+                                                <connections>
+                                                    <segue destination="fmN-im-Oma" kind="show" id="Jsc-GC-dqa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-Ex-X5x">
+                                                <rect key="frame" x="0.0" y="415.5" width="1024" height="415"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Grid Size 2"/>
+                                                <connections>
+                                                    <segue destination="fmN-im-Oma" kind="show" id="LGu-bO-Zoj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a38-7I-83t">
+                                                <rect key="frame" x="0.0" y="830.5" width="1024" height="415.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Grid Size 3"/>
+                                                <connections>
+                                                    <segue destination="fmN-im-Oma" kind="show" id="TPA-Rz-h6J"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="a38-7I-83t" firstAttribute="top" secondItem="OVb-Ex-X5x" secondAttribute="bottom" id="2bh-T5-7AC"/>
+                                            <constraint firstAttribute="bottom" secondItem="a38-7I-83t" secondAttribute="bottom" id="3Kf-tu-EpO"/>
+                                            <constraint firstItem="ZQv-iY-67G" firstAttribute="top" secondItem="RZ9-CS-L7h" secondAttribute="top" id="AVG-Ji-REH"/>
+                                            <constraint firstItem="a38-7I-83t" firstAttribute="leading" secondItem="RZ9-CS-L7h" secondAttribute="leading" id="HxQ-pD-anY"/>
+                                            <constraint firstItem="a38-7I-83t" firstAttribute="height" secondItem="ZQv-iY-67G" secondAttribute="height" id="I1k-Ux-CEe"/>
+                                            <constraint firstAttribute="trailing" secondItem="OVb-Ex-X5x" secondAttribute="trailing" id="SeN-hY-QTe"/>
+                                            <constraint firstItem="OVb-Ex-X5x" firstAttribute="height" secondItem="ZQv-iY-67G" secondAttribute="height" id="cCQ-IJ-lIu"/>
+                                            <constraint firstItem="OVb-Ex-X5x" firstAttribute="top" secondItem="ZQv-iY-67G" secondAttribute="bottom" id="f7d-y4-AOd"/>
+                                            <constraint firstItem="OVb-Ex-X5x" firstAttribute="leading" secondItem="RZ9-CS-L7h" secondAttribute="leading" id="fpd-xE-jaO"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZQv-iY-67G" secondAttribute="trailing" id="p4I-x6-g8S"/>
+                                            <constraint firstItem="a38-7I-83t" firstAttribute="width" secondItem="ZQv-iY-67G" secondAttribute="width" id="rEe-kz-Tfe"/>
+                                            <constraint firstItem="ZQv-iY-67G" firstAttribute="leading" secondItem="RZ9-CS-L7h" secondAttribute="leading" id="sQX-1h-lKX"/>
+                                            <constraint firstItem="OVb-Ex-X5x" firstAttribute="width" secondItem="ZQv-iY-67G" secondAttribute="width" id="wMc-ow-sBE"/>
+                                            <constraint firstAttribute="trailing" secondItem="a38-7I-83t" secondAttribute="trailing" id="yw6-Eg-tPZ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S3j-O1-n4L" firstAttribute="trailing" secondItem="FNE-Mz-akF" secondAttribute="trailing" id="B81-K4-C1p"/>
+                            <constraint firstItem="k3P-RT-XKE" firstAttribute="top" secondItem="S3j-O1-n4L" secondAttribute="bottom" id="Gg6-zn-P9p"/>
+                            <constraint firstItem="S3j-O1-n4L" firstAttribute="top" secondItem="FNE-Mz-akF" secondAttribute="top" id="MMu-D9-lb3"/>
+                            <constraint firstItem="FNE-Mz-akF" firstAttribute="trailing" secondItem="k3P-RT-XKE" secondAttribute="trailing" id="PBl-LX-fey"/>
+                            <constraint firstItem="k3P-RT-XKE" firstAttribute="leading" secondItem="FNE-Mz-akF" secondAttribute="leading" id="UQf-9B-kZR"/>
+                            <constraint firstItem="S3j-O1-n4L" firstAttribute="leading" secondItem="FNE-Mz-akF" secondAttribute="leading" id="V23-wA-QQF"/>
+                            <constraint firstItem="FNE-Mz-akF" firstAttribute="bottom" secondItem="k3P-RT-XKE" secondAttribute="bottom" id="lje-ve-lsT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FNE-Mz-akF"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJe-GQ-aQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922.26562499999989" y="-872.76720351390918"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wut-vQ-VxW">
+            <objects>
+                <viewController id="fmN-im-Oma" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nrn-SL-bL0">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1Fz-Yf-X3F"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJm-hP-1fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563" y="-872"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="XiL-98-J5N">
             <objects>
                 <viewController id="Qo8-AQ-GKy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4b9-kE-bBt">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lk-ej-R8x">
-                                <rect key="frame" x="50" y="126" width="1266" height="30"/>
-                                <state key="normal" title="Player 1"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkf-Iw-AlA">
-                                <rect key="frame" x="587" y="157" width="30" height="30"/>
-                                <state key="normal" title="Red">
-                                    <color key="titleColor" red="1" green="0.034920876077064067" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8j-Tm-Lcb">
-                                <rect key="frame" x="694" y="157" width="31" height="30"/>
-                                <state key="normal" title="Blue">
-                                    <color key="titleColor" red="0.025917158352513292" green="0.15706479762421166" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-lZ-pPc">
-                                <rect key="frame" x="487" y="157" width="42" height="30"/>
-                                <state key="normal" title="Green">
-                                    <color key="titleColor" red="0.027328347509853357" green="1" blue="0.0014138489788152464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cp-Wj-38k">
-                                <rect key="frame" x="50" y="80" width="1266" height="24"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
-                                <state key="normal" title="Settings"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MX-Nb-ubr">
-                                <rect key="frame" x="50" y="209" width="1266" height="30"/>
-                                <state key="normal" title="Payer 2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5S-20-Xv5">
-                                <rect key="frame" x="694" y="253" width="31" height="30"/>
-                                <state key="normal" title="Blue">
-                                    <color key="titleColor" red="0.015756598348714235" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WR-pU-M1x">
-                                <rect key="frame" x="587" y="253" width="30" height="30"/>
-                                <state key="normal" title="Red">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUL-Lb-SO0">
-                                <rect key="frame" x="489" y="253" width="42" height="30"/>
-                                <state key="normal" title="Green">
-                                    <color key="titleColor" red="0.02732834751" green="1" blue="0.0014138489790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cp-Wj-38k">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="1296"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="63"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <segue destination="4sn-BX-5NM" kind="show" id="vIU-o0-Jsg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="U5S-20-Xv5" firstAttribute="leading" secondItem="8WR-pU-M1x" secondAttribute="trailing" constant="50" id="6Hn-5N-lGO"/>
-                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="U5S-20-Xv5" secondAttribute="trailing" constant="50" id="6Uq-mZ-bd9"/>
-                            <constraint firstItem="3MX-Nb-ubr" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="8l0-B8-2hw"/>
-                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="7cp-Wj-38k" secondAttribute="trailing" constant="50" id="9Ia-86-7NA"/>
-                            <constraint firstItem="Tkf-Iw-AlA" firstAttribute="leading" secondItem="DKt-lZ-pPc" secondAttribute="trailing" constant="50" id="EHb-Sl-xbl"/>
-                            <constraint firstItem="iUL-Lb-SO0" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="Pys-9m-baX"/>
-                            <constraint firstItem="i8j-Tm-Lcb" firstAttribute="leading" secondItem="Tkf-Iw-AlA" secondAttribute="trailing" constant="50" id="Qas-Eb-nqE"/>
-                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="8lk-ej-R8x" secondAttribute="trailing" constant="50" id="RHL-Wq-sWf"/>
-                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="3MX-Nb-ubr" secondAttribute="trailing" constant="50" id="UVV-vk-NLC"/>
-                            <constraint firstItem="DKt-lZ-pPc" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="ZgE-TB-Pen"/>
-                            <constraint firstItem="7cp-Wj-38k" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="bU2-rw-qnp"/>
-                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="trailing" secondItem="i8j-Tm-Lcb" secondAttribute="trailing" constant="50" id="hYI-VP-xZ4"/>
-                            <constraint firstItem="8WR-pU-M1x" firstAttribute="leading" secondItem="iUL-Lb-SO0" secondAttribute="trailing" constant="50" id="imL-AK-QaB"/>
-                            <constraint firstItem="8lk-ej-R8x" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" constant="50" id="pLz-yy-Z4C"/>
+                            <constraint firstAttribute="trailing" secondItem="7cp-Wj-38k" secondAttribute="trailing" id="4ya-iT-fSI"/>
+                            <constraint firstItem="7cp-Wj-38k" firstAttribute="top" secondItem="CNB-lj-0Ve" secondAttribute="top" id="ARF-Yc-08P"/>
+                            <constraint firstItem="CNB-lj-0Ve" firstAttribute="bottom" secondItem="7cp-Wj-38k" secondAttribute="bottom" id="hSn-6g-6NW"/>
+                            <constraint firstItem="7cp-Wj-38k" firstAttribute="leading" secondItem="CNB-lj-0Ve" secondAttribute="leading" id="i13-nX-cgl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CNB-lj-0Ve"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsK-Vx-gXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649.63396778916535" y="-514.453125"/>
+            <point key="canvasLocation" x="304" y="-872"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tXU-tn-yic"/>
+        <segue reference="LGu-bO-Zoj"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -103,9 +103,9 @@
 				03074BBE21BAE6890096DCFA /* ViewController.swift */,
 				35A86B3B21C03038009F43B6 /* SecondView.swift */,
 				03074BC021BAE6890096DCFA /* Main.storyboard */,
+				03074BC821BAE68B0096DCFA /* Info.plist */,
 				03074BC321BAE68B0096DCFA /* Assets.xcassets */,
 				03074BC521BAE68B0096DCFA /* LaunchScreen.storyboard */,
-				03074BC821BAE68B0096DCFA /* Info.plist */,
 			);
 			path = "Dots and Squares";
 			sourceTree = "<group>";
