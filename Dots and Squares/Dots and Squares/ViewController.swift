@@ -10,6 +10,69 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Prototype player turn switching
+    
+    // Declared enum
+    enum currentPlayerTurn {
+        case player1
+        case player2
+    }
+    
+    // Declared variable using enum
+    var currentPlayer = currentPlayerTurn.player1
+    
+    @IBOutlet weak var playerSwitchButtonProperties: UIButton!
+    
+    // Button action for switching player turn state
+    @IBAction func playerSwitchButton(_ sender: UIButton) {
+        if currentPlayer == currentPlayerTurn.player1 {
+            currentPlayer = currentPlayerTurn.player2
+            print("Current player turn is player 2")
+            playerSwitchButtonProperties.setTitleColor(UIColor.black, for: UIControlState.normal)
+        } else {
+            currentPlayer = currentPlayerTurn.player1
+            print("Current player turn is player 1")
+            playerSwitchButtonProperties.setTitleColor(UIColor.red, for: UIControlState.normal)
+        }
+    }
+    
+    @IBOutlet weak var button1Outlet: UIButton!
+    @IBOutlet weak var button2Outlet: UIButton!
+    
+    @IBAction func button1(_ sender: UIButton) {
+        
+        if currentPlayer == currentPlayerTurn.player1 {
+            button1Outlet.isEnabled = false
+            button2Outlet.isEnabled = true
+            button1Outlet.setTitleColor(UIColor.black, for: UIControlState.normal)
+        }
+            
+        else if currentPlayer == currentPlayerTurn.player2 {
+            button1Outlet.isEnabled = false
+            button2Outlet.isEnabled = true
+            button1Outlet.setTitleColor(UIColor.red, for: UIControlState.normal)
+        }
+    }
+    
+    
+    @IBAction func button2(_ sender: UIButton) {
+        if currentPlayer == currentPlayerTurn.player1 {
+            button1Outlet.isEnabled = true
+            button2Outlet.isEnabled = false
+            button1Outlet.setTitleColor(UIColor.red, for: UIControlState.normal)
+            currentPlayer = currentPlayerTurn.player2
+            print("Current turn is player 2")
+        }
+            
+        else if currentPlayer == currentPlayerTurn.player2 {
+            button1Outlet.isEnabled = true
+            button2Outlet.isEnabled = false
+            button1Outlet.setTitleColor(UIColor.black, for: UIControlState.normal)
+            currentPlayer = currentPlayerTurn.player1
+            print("Current turn is player 1")
+        }
+    }
+    
     // The main thing
     // secondary thing
     override func viewDidLoad() {
