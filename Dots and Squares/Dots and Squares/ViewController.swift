@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var array = [[Line]]()
+    var array: [[Line]] = []
     
     // The main thing
     // secondary thing
@@ -27,10 +27,10 @@ class ViewController: UIViewController {
     }
     
     func generateLineArray(_ x: Int, _ y: Int) {
-        for i in 0...(2*y - 1) {
-            array[i] = [Line]()
+        for i in 0...(2*y) {
+            array.append([Line]())
             for j in 0...(x - (i+1)%2) {
-                array[i][j] = Line(xIndex: j, yIndex: i)
+                array[i].append(Line(xIndex: j, yIndex: i))
             }
         }
         

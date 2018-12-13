@@ -27,8 +27,8 @@ struct Line {
         color = UIColor.lightGray
         activated = false
         
-        xPos = (orientation == .HORIZONTAL ? 25 : 0) + 50 * xIndex
-        yPos = 25 * yIndex
+        xPos = 50 * xIndex
+        yPos = (yIndex / 2) * 50
     }
     
     mutating func setActive() {
