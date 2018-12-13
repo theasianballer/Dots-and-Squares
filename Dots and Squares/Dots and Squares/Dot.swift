@@ -10,9 +10,15 @@ import Foundation
 
 class Dot
 {
-    var xpos = 0
-    var ypos = 0
-    var teamNumber = 0
+    var xpos: Int
+    var ypos: Int
+    var teamNumber: Int
+    
+    init (_ xPos: Int, _ yPos: Int) {
+        self.xpos = xPos
+        self.ypos = yPos
+        self.teamNumber = 0
+    }
     
     func setxpos(setTo: Int)
     {
