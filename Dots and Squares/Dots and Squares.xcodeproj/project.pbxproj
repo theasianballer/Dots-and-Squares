@@ -99,6 +99,7 @@
 		03074BBB21BAE6890096DCFA /* Dots and Squares */ = {
 			isa = PBXGroup;
 			children = (
+				B0FB1E4C21BAED3D0016E19F /* Dot.swift */,
 				03074BBC21BAE6890096DCFA /* AppDelegate.swift */,
 				B01615B921C2CBB300DD2B85 /* Line.swift */,
 				03074BBE21BAE6890096DCFA /* ViewController.swift */,
@@ -262,6 +263,7 @@
 				B01615BA21C2CBB300DD2B85 /* Line.swift in Sources */,
 				03074BBF21BAE6890096DCFA /* ViewController.swift in Sources */,
 				03074BBD21BAE6890096DCFA /* AppDelegate.swift in Sources */,
+				B0FB1E4D21BAED3D0016E19F /* Dot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
