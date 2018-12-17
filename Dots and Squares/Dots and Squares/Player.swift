@@ -24,5 +24,9 @@ struct Player
     {
         intials = intial
     }
+    mutating func setColor(to colors: UIColor)
+    {
+        color = colors
+    }
 }
 
