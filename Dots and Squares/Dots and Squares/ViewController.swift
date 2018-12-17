@@ -37,10 +37,9 @@ class ViewController: UIViewController {
         }
         for row in array {
             for line in row {
-                let button = UIButton(frame: CGRect(x: line.xPos+125, y: line.yPos+125, width: line.orientation == .HORIZONTAL ? 50 : 10, height: line.orientation == .VERTICAL ? 50 : 10))
+                let button = UIButton(frame: CGRect(x: line.xPos+292, y: line.yPos+406, width: line.orientation == .HORIZONTAL ? 50 : 10, height: line.orientation == .VERTICAL ? 50 : 10))
                 button.backgroundColor = UIColor.lightGray
                 button.setTitle("", for: [])
-                
                 button.addTarget(self, action: #selector(linePressed), for: .touchUpInside)
                 
                 self.view.addSubview(button)
@@ -59,7 +58,7 @@ class ViewController: UIViewController {
         }
         for row in dotArray {
             for dot in row {
-                let button = UIButton(frame: CGRect(x: dot.xpos+125, y: dot.ypos+125, width: 10, height: 10))
+                let button = UIButton(frame: CGRect(x: dot.xpos+292, y: dot.ypos+406, width: 10, height: 10))
                 button.backgroundColor = UIColor.black
                 button.setTitle("", for: [])
                 button.addTarget(self, action: #selector(dotPressed), for: .touchUpInside)
