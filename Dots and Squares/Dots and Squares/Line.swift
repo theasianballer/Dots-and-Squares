@@ -19,15 +19,15 @@ struct Line {
     var color: UIColor
     var activated: Bool
     var orientation: Orientation
-    var button: UIButton
+    var button: UIButton!
     
     init(xIndex _xIndex: Int, yIndex _yIndex: Int) {
         xIndex = _xIndex
         yIndex = _yIndex
         
         orientation = yIndex % 2 == 0 ? .HORIZONTAL : .VERTICAL
-        width = line.orientation == .HORIZONTAL ? 50 : 10
-        height = line.orientation == .HORIZONTAL ? 10 : 50
+        width = orientation == .HORIZONTAL ? 50 : 10
+        height = orientation == .HORIZONTAL ? 10 : 50
         
         color = UIColor.lightGray
         activated = false
