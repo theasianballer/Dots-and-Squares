@@ -43,44 +43,6 @@ class ViewController: UIViewController {
         }
     }
     
-    // Declared button properties variables
-    @IBOutlet weak var button1Outlet: UIButton!
-    @IBOutlet weak var button2Outlet: UIButton!
-    
-    // Action of hititng the first button
-    @IBAction func button1(_ sender: UIButton) {
-        if currentPlayer == currentPlayerTurn.player1 {
-            button1Outlet.isEnabled = false
-            button2Outlet.isEnabled = true
-            button1Outlet.setTitleColor(UIColor.black, for: UIControlState.normal)
-        }
-            
-        else if currentPlayer == currentPlayerTurn.player2 {
-            button1Outlet.isEnabled = false
-            button2Outlet.isEnabled = true
-            button1Outlet.setTitleColor(UIColor.red, for: UIControlState.normal)
-        }
-    }
-    
-    // Action of hitting the second button
-    @IBAction func button2(_ sender: UIButton) {
-        if currentPlayer == currentPlayerTurn.player1 {
-            button1Outlet.isEnabled = true
-            button2Outlet.isEnabled = false
-            button1Outlet.setTitleColor(UIColor.red, for: UIControlState.normal)
-            currentPlayer = currentPlayerTurn.player2
-            print("Current turn is player 2")
-        }
-            
-        else if currentPlayer == currentPlayerTurn.player2 {
-            button1Outlet.isEnabled = true
-            button2Outlet.isEnabled = false
-            button1Outlet.setTitleColor(UIColor.black, for: UIControlState.normal)
-            currentPlayer = currentPlayerTurn.player1
-            print("Current turn is player 1")
-        }
-    }
-    
     // Loading method
     override func viewDidLoad() {
         super.viewDidLoad()
