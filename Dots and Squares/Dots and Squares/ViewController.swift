@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var dotArray: [[Dot]] = []
+    var lineArray: [[Line]] = []
+    var squareArray: [[Square]] = []
+
     // Prototype player turn switching
     // Declared enum
     enum currentPlayerTurn {
@@ -156,9 +160,6 @@ class ViewController: UIViewController {
     }
     @IBAction func linePressed(_ sender: UIButton!) {
         print("pressed a line")
-    }
-    @IBAction func squarePressed(_ sender: UIButton!) {
-        print("pressed a square")
     }
 }
 
