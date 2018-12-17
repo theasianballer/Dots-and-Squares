@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     var dotArray: [[Dot]] = []
-    var array: [[Line]] = []
+    var lineArray: [[Line]] = []
+    var squareArray: [[Square]] = []
     
     // The main thing
     // secondary thing
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
         
         generateLineArray(5, 6);
         generateDotArray(5, 6);
+        generateSquareArray(5, 6);
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +32,7 @@ class ViewController: UIViewController {
     
     func generateLineArray(_ x: Int, _ y: Int) {
         for i in 0...(2*y) {
-            array.append([Line]())
+            lineArray.append([Line]())
             for j in 0...(x - (i+1)%2) {
                 array[i].append(Line(xIndex: j, yIndex: i))
             }
@@ -43,10 +45,11 @@ class ViewController: UIViewController {
                 button.addTarget(self, action: #selector(linePressed), for: .touchUpInside)
                 
                 self.view.addSubview(button)
+                line.button = button
             }
         }
                 
-        print(array)
+        print(lineArray)
     }
         
     func generateDotArray(_ x: Int, _ y: Int) {
@@ -68,6 +71,24 @@ class ViewController: UIViewController {
         }
         
         print(dotArray)
+    }
+    
+    func generateSquareArray(_ x: Int, _ y: Int) {
+        for i in 0...(y - 1) {
+            squareArray.append([Square]())
+            for j in 0...(x - 1) {
+                squareArray[i].append(Square(xIndex: j * 50, yIndex: i * 50))
+                var square = squareArray[i][j]
+                
+                let button = UIButton(frame: CGRect(x: square.xPos+125, y: square.yPos+125, width: 50, height: 50))
+                button.backgroundColor = square.color
+                button.setTitle("", for: [])
+                button.addTarget(self, action: #selector(dotPressed), for: .touchUpInside)
+                
+                self.view.addSubview(button)
+                square.button = button
+            }
+        }
     }
     
     @IBAction func dotPressed(_ sender: UIButton!) {
