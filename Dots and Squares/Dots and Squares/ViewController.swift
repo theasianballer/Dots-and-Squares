@@ -20,9 +20,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        generateSquareArray(5, 6);
         generateLineArray(5, 6);
         generateDotArray(5, 6);
-        generateSquareArray(5, 6);
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
         for i in 0...(y - 1) {
             squareArray.append([Square]())
             for j in 0...(x - 1) {
-                squareArray[i].append(Square(xIndex: j * 50, yIndex: i * 50))
+                squareArray[i].append(Square(xIndex: j, yIndex: i))
                 var square = squareArray[i][j]
                 
                 let button = UIButton(frame: CGRect(x: square.xPos+292, y: square.yPos+406, width: 50, height: 50))
@@ -85,6 +86,8 @@ class ViewController: UIViewController {
                 square.button = button
             }
         }
+        
+        print(squareArray)
     }
     
     @IBAction func dotPressed(_ sender: UIButton!) {

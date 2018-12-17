@@ -17,6 +17,7 @@
 		097A648321C8106A0030E3C0 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097A648221C8106A0030E3C0 /* Square.swift */; };
 		B01615BA21C2CBB300DD2B85 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01615B921C2CBB300DD2B85 /* Line.swift */; };
 		B01615BC21C2D71800DD2B85 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01615BB21C2D71800DD2B85 /* Dot.swift */; };
+		B0FABB9721C8184C0007C391 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FABB9621C8184C0007C391 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		097A648221C8106A0030E3C0 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
 		B01615B921C2CBB300DD2B85 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		B01615BB21C2D71800DD2B85 /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
+		B0FABB9621C8184C0007C391 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B01615B921C2CBB300DD2B85 /* Line.swift */,
 				097A648221C8106A0030E3C0 /* Square.swift */,
 				03074BBE21BAE6890096DCFA /* ViewController.swift */,
+				B0FABB9621C8184C0007C391 /* Player.swift */,
 				03074BC021BAE6890096DCFA /* Main.storyboard */,
 				03074BC321BAE68B0096DCFA /* Assets.xcassets */,
 				03074BC521BAE68B0096DCFA /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				B01615BA21C2CBB300DD2B85 /* Line.swift in Sources */,
 				03074BBF21BAE6890096DCFA /* ViewController.swift in Sources */,
 				03074BBD21BAE6890096DCFA /* AppDelegate.swift in Sources */,
+				B0FABB9721C8184C0007C391 /* Player.swift in Sources */,
 				B01615BC21C2D71800DD2B85 /* Dot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

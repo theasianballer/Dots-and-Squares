@@ -21,7 +21,7 @@ struct Square {
         xIndex = _xIndex
         yIndex = _yIndex
         
-        color = .init(red: 0, green: 0, blue: 0, alpha: 0)
+        color = .init(red: 0, green: 0, blue: 0, alpha: 0.1)
         
         xPos = xIndex * 50
         yPos = yIndex * 50
