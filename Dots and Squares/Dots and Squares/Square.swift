@@ -15,6 +15,7 @@ struct Square {
     var xIndex: Int
     var yIndex: Int
     var color: UIColor
+    var button: UIButton!
     
     init(xIndex _xIndex: Int, yIndex _yIndex: Int) {
         xIndex = _xIndex
@@ -24,5 +25,14 @@ struct Square {
         
         xPos = xIndex * 50
         yPos = yIndex * 50
+    }
+    
+    func getYPos() -> Int
+    {
+        return yPos
+    }
+    func getxPos() -> Int
+    {
+        return xPos
     }
 }
