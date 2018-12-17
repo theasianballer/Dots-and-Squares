@@ -15,11 +15,17 @@ class ViewController: UIViewController {
     var playerOneScore = 0
     var playerTwoScore = 0
     
+    @IBOutlet weak var scorePlayerOne: UILabel!
+    @IBOutlet weak var scorePlayerTwo: UILabel!
+    
+    
     func increment(for player: Int) {
         if (player == 1) {
             playerOneScore += 1
+            scorePlayerOne.text = "Player One: \(playerOneScore)"
         } else if (player == 2) {
             playerTwoScore += 1
+            scorePlayerTwo.text = "Player Two: \(playerTwoScore)"
         }
     }
     
@@ -27,6 +33,7 @@ class ViewController: UIViewController {
         playerOneScore = 0
         playerTwoScore = 0
     }
+    
     
     
     
