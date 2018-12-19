@@ -11,18 +11,19 @@ import UIKit
 
 struct Player
 {
-    var intials: String
+    var initials: String
     var color: UIColor
-    func getIntials() -> String
+    
+    func getInitials() -> String
     {
-        return intials
+        return initials
     }
     func getPlayerColor() -> UIColor
     {
         return color
     }
-    mutating func setIntials(to intial: String)
+    mutating func setInitials(to initial: String)
     {
-        intials = intial
+        initials = initial
     }
 }
