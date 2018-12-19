@@ -39,4 +39,8 @@ struct Square {
     {
         return xPos
     }
+    
+    mutating func incrementActive() {
+        numberActive += 1
+    }
 }

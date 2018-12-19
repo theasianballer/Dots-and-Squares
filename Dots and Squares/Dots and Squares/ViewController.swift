@@ -76,7 +76,7 @@ class ViewController: UIViewController {
                 
                 let button = UIButton(frame: CGRect(x: line.xPos+292, y: line.yPos+406, width: line.width, height: line.height))
                 button.backgroundColor = UIColor.lightGray
-                button.setTitle("\(x) \(y)", for: [])
+                button.setTitle("\(j) \(i)", for: [])
                 button.addTarget(self, action: #selector(linePressed), for: .touchUpInside)
                 
                 self.view.addSubview(button)
@@ -120,6 +120,7 @@ class ViewController: UIViewController {
                 
                 self.view.addSubview(button)
                 square.button = button
+                squareArray[i][j] = square
             }
         }
         
@@ -138,11 +139,10 @@ class ViewController: UIViewController {
         guard let x = Int(titleSplit[0]) else { return }
         guard let y = Int(titleSplit[1]) else { return }
         
-        var target = lineArray[x][y]
+        var target = lineArray[y][x]
         guard !target.activated else { return }
         
         target.activated = true
-        playerSwitchButton(sender);
         
         if target.orientation == .HORIZONTAL {
             checkSquare(x, y/2)
@@ -151,14 +151,17 @@ class ViewController: UIViewController {
             checkSquare(x, y/2)
             checkSquare(x - 1, y/2)
         }
+        
+        playerSwitchButton(sender)
     }
     
     
     func checkSquare(_ x: Int, _ y: Int) {
         guard x >= 0 && x < squareArray.count && y >= 0 && y < squareArray[x].count else { return }
         
-        var square = squareArray[x][y]
-        square.numberActive += 1
+        var square = squareArray[y][x]
+        square.incrementActive()
+        squareArray[y][x] = square
         
         if square.numberActive >= 4 {
             changeButtonColor(square.button)
