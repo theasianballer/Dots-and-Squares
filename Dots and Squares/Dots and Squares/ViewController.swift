@@ -29,55 +29,26 @@ class ViewController: UIViewController {
     
     // Button action for switching player turn state
     @IBAction func playerSwitchButton(_ sender: UIButton) {
-        if currentPlayer == currentPlayerTurn.player1 {
-            currentPlayer = currentPlayerTurn.player2
-            print("Current player turn is player 2")
-            playerSwitchButtonProperties.setTitleColor(UIColor.black, for: UIControlState.normal)
-        } else {
-            currentPlayer = currentPlayerTurn.player1
-            print("Current player turn is player 1")
-            playerSwitchButtonProperties.setTitleColor(UIColor.red, for: UIControlState.normal)
-        }
-    }
-    
-    // Declared button properties variables
-    @IBOutlet weak var button1Outlet: UIButton!
-    @IBOutlet weak var button2Outlet: UIButton!
-    
-    // Action of hititng the first button
-    @IBAction func button1(_ sender: UIButton) {
+        changeButtonColor(sender)
         
         if currentPlayer == currentPlayerTurn.player1 {
-            button1Outlet.isEnabled = false
-            button2Outlet.isEnabled = true
-            button1Outlet.setTitleColor(UIColor.black, for: UIControlState.normal)
-        }
-            
-        else if currentPlayer == currentPlayerTurn.player2 {
-            button1Outlet.isEnabled = false
-            button2Outlet.isEnabled = true
-            button1Outlet.setTitleColor(UIColor.red, for: UIControlState.normal)
+            currentPlayer = currentPlayerTurn.player2
+        } else {
+            currentPlayer = currentPlayerTurn.player1
         }
     }
     
-    // Action of hitting the second button
-    @IBAction func button2(_ sender: UIButton) {
+    func changeButtonColor(_ sender: UIButton) {
         if currentPlayer == currentPlayerTurn.player1 {
-            button1Outlet.isEnabled = true
-            button2Outlet.isEnabled = false
-            button1Outlet.setTitleColor(UIColor.red, for: UIControlState.normal)
-            currentPlayer = currentPlayerTurn.player2
-            print("Current turn is player 2")
+            sender.backgroundColor = .black
+        } else {
+            sender.backgroundColor = .red
         }
-            
-        else if currentPlayer == currentPlayerTurn.player2 {
-            button1Outlet.isEnabled = true
-            button2Outlet.isEnabled = false
-            button1Outlet.setTitleColor(UIColor.black, for: UIControlState.normal)
-            currentPlayer = currentPlayerTurn.player1
-            print("Current turn is player 1")
-        }
+        
     }
+
+    
+    
     
     // Loading method
     override func viewDidLoad() {
@@ -105,7 +76,7 @@ class ViewController: UIViewController {
                 
                 let button = UIButton(frame: CGRect(x: line.xPos+292, y: line.yPos+406, width: line.width, height: line.height))
                 button.backgroundColor = UIColor.lightGray
-                button.setTitle("", for: [])
+                button.setTitle("\(x) \(y)", for: [])
                 button.addTarget(self, action: #selector(linePressed), for: .touchUpInside)
                 
                 self.view.addSubview(button)
@@ -159,7 +130,41 @@ class ViewController: UIViewController {
         print("pressed a dot")
     }
     @IBAction func linePressed(_ sender: UIButton!) {
-        print("pressed a line")
+        guard let label = sender.titleLabel else { return }
+        guard let title = label.text else { return }
+        
+        let titleSplit = title.components(separatedBy: " ")
+        
+        guard let x = Int(titleSplit[0]) else { return }
+        guard let y = Int(titleSplit[1]) else { return }
+        
+        var target = lineArray[x][y]
+        guard !target.activated else { return }
+        
+        target.activated = true
+        playerSwitchButton(sender);
+        
+        if target.orientation == .HORIZONTAL {
+            checkSquare(x, y/2)
+            checkSquare(x, y/2 - 1)
+        } else {
+            checkSquare(x, y/2)
+            checkSquare(x - 1, y/2)
+        }
     }
+    
+    
+    func checkSquare(_ x: Int, _ y: Int) {
+        guard x >= 0 && x < squareArray.count && y >= 0 && y < squareArray[x].count else { return }
+        
+        var square = squareArray[x][y]
+        square.numberActive += 1
+        
+        if square.numberActive >= 4 {
+            changeButtonColor(square.button)
+        }
+        
+    }
+    
 }
 
