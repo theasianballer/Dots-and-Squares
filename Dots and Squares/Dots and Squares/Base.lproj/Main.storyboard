@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad12_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,16 +15,16 @@
             <objects>
                 <viewController id="4sn-BX-5NM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Weh-Jy-qQF">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3j-O1-n4L">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
+                                <rect key="frame" x="0.0" y="20" width="834" height="44"/>
                                 <items>
                                     <navigationItem title="Size Selection" id="o8B-cL-hOC">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="rXZ-B6-572">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jIO-gY-Luk">
-                                                <rect key="frame" x="20" y="3" width="78" height="44"/>
+                                                <rect key="frame" x="20" y="0.0" width="78" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                 <state key="normal" title="&lt;Back"/>
@@ -37,13 +37,13 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-RT-XKE">
-                                <rect key="frame" x="0.0" y="70" width="1024" height="1246"/>
+                                <rect key="frame" x="0.0" y="64" width="834" height="1004"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-CS-L7h">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1246"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="1004"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQv-iY-67G">
-                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="415.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="834" height="334.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="Grid Size 1"/>
                                                 <connections>
@@ -51,7 +51,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-Ex-X5x">
-                                                <rect key="frame" x="0.0" y="415.5" width="1024" height="415"/>
+                                                <rect key="frame" x="0.0" y="334.5" width="834" height="335"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="Grid Size 2"/>
                                                 <connections>
@@ -59,7 +59,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a38-7I-83t">
-                                                <rect key="frame" x="0.0" y="830.5" width="1024" height="415.5"/>
+                                                <rect key="frame" x="0.0" y="669.5" width="834" height="334.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="Grid Size 3"/>
                                                 <connections>
@@ -111,7 +111,7 @@
             <objects>
                 <viewController id="fmN-im-Oma" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nrn-SL-bL0">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Fz-Yf-X3F"/>
@@ -126,11 +126,11 @@
             <objects>
                 <viewController id="Qo8-AQ-GKy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4b9-kE-bBt">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cp-Wj-38k">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="1296"/>
+                                <rect key="frame" x="0.0" y="20" width="834" height="1048"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="63"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
