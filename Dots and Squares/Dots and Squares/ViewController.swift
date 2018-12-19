@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scorePlayerTwo: UILabel!
     
     
+    
     func increment(for player: Int) {
         if (player == 1) {
             playerOneScore += 1
