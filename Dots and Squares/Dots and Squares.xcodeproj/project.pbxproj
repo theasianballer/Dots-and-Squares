@@ -55,6 +55,20 @@
         B01615B921C2CBB300DD2B85 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
         B01615BB21C2D71800DD2B85 /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
         B0FABB9621C8184C0007C391 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		03074BB921BAE6890096DCFA /* Dots and Squares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dots and Squares.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03074BBC21BAE6890096DCFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03074BBE21BAE6890096DCFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03074BC121BAE6890096DCFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03074BC321BAE68B0096DCFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03074BC621BAE68B0096DCFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03074BC821BAE68B0096DCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03074BCD21BAE68B0096DCFA /* Dots and SquaresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dots and SquaresTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03074BD121BAE68B0096DCFA /* Dots_and_SquaresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dots_and_SquaresTests.swift; sourceTree = "<group>"; };
+		03074BD321BAE68B0096DCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03074BD821BAE68B0096DCFA /* Dots and SquaresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dots and SquaresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03074BDC21BAE68B0096DCFA /* Dots_and_SquaresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dots_and_SquaresUITests.swift; sourceTree = "<group>"; };
+		03074BDE21BAE68B0096DCFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0BB3C9D21C02D5F004653EB /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
