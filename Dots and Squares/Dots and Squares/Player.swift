@@ -9,6 +9,21 @@
 import Foundation
 import UIKit
 
-struct Player {
+struct Player
+{
+    var initials: String
+    var color: UIColor
     
+    func getInitials() -> String
+    {
+        return initials
+    }
+    func getPlayerColor() -> UIColor
+    {
+        return color
+    }
+    mutating func setInitials(to initial: String)
+    {
+        initials = initial
+    }
 }
